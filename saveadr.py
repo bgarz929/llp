@@ -1,8 +1,8 @@
 import sqlite3
 import os
 
-DB_FILE = "database.db"   # ganti sesuai nama database kamu
-OUTPUT_FILE = "adr.txt"
+DB_FILE = "valid_nonce_reuse.db"   # ganti sesuai nama database kamu
+OUTPUT_FILE = "wallet.txt"
 
 def extract_grouped_addresses(db_path, output_file):
     if not os.path.exists(db_path):
@@ -41,3 +41,4 @@ def extract_grouped_addresses(db_path, output_file):
 
 if __name__ == "__main__":
     extract_grouped_addresses(DB_FILE, OUTPUT_FILE)
+
